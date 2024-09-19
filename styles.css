@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Signika:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+body {
+    background-color: #000;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url(./midia/banner-pc.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#banner-coment {
+    background-image: url(./midia/banner-coment.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#banner-mobile {
+    display: none;
+    background-image: url(./midia/banner-celular.webp);
+    background-position: 40%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'kdam thmor pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 250px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url(./midia/atores/Robert_Pattinson_Batman_2022.webp);
+}
+
+.banner-2 {
+    background-image: url(./midia/atores/Zoe_Kravitz_2020_dvna_studio.jpg);
+}
+
+.banner-3 {
+    background-image: url(./midia/atores/Jeffrey\ Wright.webp);
+}
+
+footer {
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+span {
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+.section-subtitle {
+    padding: 25px;
+    font-size: 20px;
+}
+
+.principal-contat {
+    background-image: url(./midia/contato/background-bat.jpg);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+#contat-area {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 400px;
+    height: 570px;
+    padding: 30px 40px;
+}
+
+.contat-container {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: #5d0909;
+    color: #fff;
+}
+
+.icons {
+    cursor: pointer;
+    padding: 3px;
+    margin: 10px;
+}
+
+.fa-brands {
+    margin: 3px;
+}
+
+textarea {
+    resize: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    width: 100%;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.anuncio {
+    background-color: #121212;
+    padding: 30px;
+    border-radius: 20px;
+    width: 500px;
+    height: 950px;
+    margin: 70px;
+}
+
+.banner-anuncio {
+    width: 500px;
+    height: 700px;
+    padding-top: 40px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.banner-anuncio:hover {
+    transform: scale(1.05);
+}
+
+.sinopse {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+#posters {
+    margin-left: 60px;
+    padding: 50px;
+    background-color: #121212;
+    width: 950px;
+    border-radius: 15px;
+    margin: 30px;
+    position: relative;
+}
+
+.titulo {
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+    margin-bottom: 20px;
+    text-decoration:underline #D21617;
+}
+
+#posters-grid {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 3px;
+}
+
+.poster-big {
+    background-image: url(./midia/fotos/posters/poster-0.webp);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+
+.poster-big:hover {
+    opacity: 0.5;
+}
+
+.poster-mini {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.poster-mini:hover {
+    opacity: 0.5;
+}
+
+.poster-1 {
+    background-image: url(./midia/fotos/posters/poster-1.webp);
+}
+
+.poster-2 {
+    background-image: url(./midia/fotos/posters/poster-2.jpg);
+}
+
+.poster-3 {
+    background-image: url(./midia/fotos/posters/poster-3.webp);
+}
+
+.poster-4 {
+    background-image: url(./midia/fotos/posters/poster-4.jpg);
+}
+
+.poster-5 {
+    background-image: url(./midia/fotos/posters/poster-5.jpg);
+}
+
+.poster-6 {
+    background-image: url(./midia/fotos/posters/poster-6.jpg);
+}
+
+.poster-7 {
+    background-image: url(./midia/fotos/posters/poster-7.jpg);
+}
+
+.poster-8 {
+    background-image: url(./midia/fotos/posters/poster-8.jpg);
+}
+
+#fotos {
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+    padding: 50px;
+    margin-left: 60px;
+    margin: 30px;
+    background-color: #121212;
+    width: 950px;
+    border-radius: 15px;
+}
+
+#fotos-grid {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 3px;
+}
+
+.foto-big {
+    background-image: url(./midia/fotos/photos/foto-0.webp);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.foto-big:hover {
+    opacity: 0.5;
+}
+
+.fotos-mini {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.fotos-mini:hover {
+    opacity: 0.5;
+}
+
+.foto-1 {
+    background-image: url(./midia/fotos/posters/poster-2.jpg)
+}
+
+.foto-2 {
+    background-image: url(./midia/fotos/photos/foto-2.jpg);
+}
+
+.foto-3 {
+    background-image: url(./midia/fotos/photos/foto-3.webp);
+}
+
+.foto-4 {
+    background-image: url(./midia/fotos/photos/foto-4.webp);
+}
+
+.foto-5 {
+    background-image: url(./midia/fotos/photos/foto-5.webp);
+}
+
+.foto-6 {
+    background-image: url(./midia/fotos/photos/foto-6.webp);
+}
+
+.foto-7 {
+    background-image: url(./midia/fotos/photos/foto-7.webp);
+}
+
+.foto-8 {
+    background-image: url(./midia/fotos/photos/foto-8.webp);
+}
+
+#coments-area {
+    display: flex;
+    flex-direction: row-reverse;
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+    background-color: #000;
+    height: 700px;
+    padding: 50px;
+}
+
+.coments-container {
+    width: 1450px;
+    height: 650px;
+}
+
+.coments-container button {
+    margin: auto;
+}
+
+#Batman {
+    width: 400px;
+    height: 650px;
+}
+
+#feedback {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.feedbacks {
+    display: flex;
+    z-index: 1;
+    margin: 10px;
+}
+
+.feedback-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.user {
+    color: #D21617;
+}
+
+.fa-solid {
+    color: #E5AC08;
+}
+
+.feedback-content {
+    font-family: 'Signika';
+    font-size: 18px;
+    background-color: #262626;
+    border-radius: 10px;
+    width: 1090px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.feedback-content::after, .feedback-content::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 5%, #d21617);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.feedback-content::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin {
+    from{
+    --angle: 0deg;
+}
+to {
+    --angle: 360deg;
+}
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-image: none;
+    }
+
+    #banner-mobile {
+        display: block;
+    }
+
+    #trailer-container {
+        width:  100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
+
